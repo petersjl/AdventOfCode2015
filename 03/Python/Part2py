@@ -1,0 +1,47 @@
+from pathlib import Path
+
+def parseInput():
+    path = Path(__file__).parent / "../input.txt"
+    input = path.open()
+    return input.read()
+
+def main():
+    input = parseInput()
+    xs = 0
+    ys = 0
+    xr = 0
+    yr = 0
+    houses = {0: {0: 2}}
+    for i in range(len(input)):
+        c = input[i]
+        santa = i%2 == 0
+        if c == "^": 
+            if santa: ys += 1 
+            else: yr += 1
+        elif c == "v": 
+            if santa: ys -= 1
+            else: yr -= 1
+        elif c == ">": 
+            if santa: xs += 1 
+            else: xr += 1
+        elif c == "<": 
+            if santa: xs -= 1
+            else: xr -= 1
+        else:
+            print(f'Invalid input: {c}')
+            exit()
+        x = xs if santa else xr
+        y = ys if santa else yr
+        if houses.get(x):
+            if houses[x].get(y): houses[x][y] += 1
+            else: houses[x][y] = 1
+        else: houses[x] = {y: 1}
+    count = 0
+    for dict in houses:
+        count += len(houses[dict].keys())
+    #print(houses)
+    print(f'Houses with at least one present: {count}')
+    return
+
+if __name__ == '__main__':
+    main()
