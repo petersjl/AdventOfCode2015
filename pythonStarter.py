@@ -2,8 +2,8 @@ from pathlib import Path
 
 def parseInput():
     path = Path(__file__).parent / "../input.txt"
-    input = path.open()
-    return input.read()
+    input = path.open().read()
+    return input
 
 def main():
     input = parseInput()
