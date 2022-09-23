@@ -42,7 +42,7 @@ def main():
 	for n in nodes:
 		cpy = nodes.copy()
 		cpy.remove(n)
-		maximum = max(maximum, tsp(n, nodes, distances, memo))
+		maximum = max(maximum, tsp(n, cpy, distances, memo))
 	print(f'The max distance is {maximum}')
 	return
 
