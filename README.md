@@ -20,3 +20,4 @@ Calendar:
 - Day 16: Aunt Sue
 - Day 17: No Such Thing as Too Much
 - Day 18: Like a GIF For Your Yard
+- Day 19: Medicine for Rudolph
