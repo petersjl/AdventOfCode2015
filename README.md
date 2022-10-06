@@ -22,3 +22,4 @@ Calendar:
 - Day 18: Like a GIF For Your Yard
 - Day 19: Medicine for Rudolph
 - Day 20: Infinite Elves and Infinite Houses
+- Day 21: RPG Simulator 20XX
