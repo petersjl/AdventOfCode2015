@@ -25,3 +25,5 @@ Calendar:
 - Day 21: RPG Simulator 20XX
 - Day 22: Wizard Simulator 20XX
 - Day 23: Opening the Turing Lock
+- Day 24: It Hangs in the Balance
+- Day 25: Let It Snow
